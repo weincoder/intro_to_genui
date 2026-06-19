@@ -105,7 +105,21 @@ cp android/app/google-services.json.example android/app/google-services.json
 cp ios/Runner/GoogleService-Info.plist.example ios/Runner/GoogleService-Info.plist
 ```
 
-Run with Firebase values using --dart-define (example):
+Run on Chrome using a local dart-define file:
+
+```bash
+cp firebase_web.env.example.json firebase_web.env.json
+```
+
+Fill firebase_web.env.json with your Firebase Web values.
+
+Then run:
+
+```bash
+flutter run -d chrome --dart-define-from-file=firebase_web.env.json
+```
+
+You can also run with inline --dart-define values (example):
 
 ```bash
 flutter run \
