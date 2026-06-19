@@ -176,3 +176,30 @@ flutter test test/widget_test.dart
 - Spanish-first conversational experience.
 - Retro-inspired visual layer (grid/orb) with owl feedback states.
 - Cross-platform Flutter target (Android, iOS, macOS, Linux, Web, Windows).
+
+---
+
+## 🙏 Acknowledgments
+
+- **Google Cloud**: For Vertex AI and Gemini models
+- **Firebase**: For seamless backend integration
+- **Flutter Team**: For the amazing framework
+- **Open Source Community**: For excellent packages
+
+## 📞 Support
+
+- **Issues**: [GitHub Issues](https://github.com/weincoder/intro_to_genui/issues)
+- **Email**: danielherresan@gmail.com
+
+---
+
+## 👥 Authors
+
+* **Daniel Herrera (Weincode)** - [LinkedIn](https://www.linkedin.com/in/daniel-herrera-sanchez-a4106a56/) | [YouTube](https://youtube.com/@weincode)
+
+---
+
+<div align="center">
+	<sub>Built with ❤️ by the Flutter Medellin community and Weincode.</sub><br>
+	<sub>Made it this far? Don't forget to leave your ⭐</sub>
+</div>

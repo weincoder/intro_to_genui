@@ -162,3 +162,30 @@ flutter test test/widget_test.dart
 - Experiencia conversacional en espanol.
 - Estetica retro (grid/orb) con estados visuales del buho.
 - Objetivo multiplataforma Flutter (Android, iOS, macOS, Linux, Web, Windows).
+
+---
+
+## 🙏 Agradecimientos
+
+- **Google Cloud**: Por Vertex AI y los modelos Gemini
+- **Firebase**: Por la integracion fluida de backend
+- **Flutter Team**: Por el framework increible
+- **Comunidad Open Source**: Por los excelentes paquetes
+
+## 📞 Soporte
+
+- **Issues**: [GitHub Issues](https://github.com/weincoder/intro_to_genui/issues)
+- **Email**: danielherresan@gmail.com
+
+---
+
+## 👥 Autores
+
+* **Daniel Herrera (Weincode)** - [LinkedIn](https://www.linkedin.com/in/daniel-herrera-sanchez-a4106a56/) | [YouTube](https://youtube.com/@weincode)
+
+---
+
+<div align="center">
+   <sub>Construido con ❤️ por la comunidad Flutter Medellin y Weincode.</sub><br>
+   <sub>Llegaste hasta aqui? No olvides dejar tu ⭐</sub>
+</div>
