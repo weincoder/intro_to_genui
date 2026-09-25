@@ -1,0 +1,8 @@
+{
+  "label": "5. Best Practices & FAQ",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Production tips, error resilience, automated testing, and frequently asked questions about A2UI."
+  }
+}

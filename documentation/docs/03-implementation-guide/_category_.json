@@ -1,0 +1,8 @@
+{
+  "label": "3. Guía de Implementación Paso a Paso",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Tutorial práctico para implementar A2UI en una aplicación Flutter desde cero basándote en este proyecto."
+  }
+}

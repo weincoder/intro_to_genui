@@ -23,16 +23,16 @@ import 'package:flutter/foundation.dart'
 /// - FIREBASE_IOS_STORAGE_BUCKET
 /// - FIREBASE_IOS_BUNDLE_ID
 class DefaultFirebaseOptions {
-  static FirebaseOptions get currentPlatform {
+  static FirebaseOptions? get currentPlatform {
     if (kIsWeb) {
       return _validated(platformName: 'web', options: web);
     }
 
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        return _validated(platformName: 'android', options: android);
+        return android.apiKey.isNotEmpty ? android : null;
       case TargetPlatform.iOS:
-        return _validated(platformName: 'ios', options: ios);
+        return ios.apiKey.isNotEmpty ? ios : null;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions no se ha configurado para macOS.',

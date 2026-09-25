@@ -1,0 +1,54 @@
+{
+  "copyright": {
+    "message": "Copyright © 2026 Intro to GenUI - Daniel Herrera (Weincode). Built with Docusaurus.",
+    "description": "The footer copyright"
+  },
+  "link.title.Documentación": {
+    "message": "Documentation",
+    "description": "The title of the footer links column with title=Documentación in the footer"
+  },
+  "link.title.Comunidad & Autor": {
+    "message": "Community & Author",
+    "description": "The title of the footer links column with title=Comunidad & Autor in the footer"
+  },
+  "link.title.Recursos": {
+    "message": "Resources",
+    "description": "The title of the footer links column with title=Recursos in the footer"
+  },
+  "link.item.label.Introducción a A2UI": {
+    "message": "Introduction to A2UI",
+    "description": "The label of footer link with label=Introducción a A2UI linking to /docs/intro/welcome"
+  },
+  "link.item.label.Arquitectura": {
+    "message": "Architecture",
+    "description": "The label of footer link with label=Arquitectura linking to /docs/architecture/overview"
+  },
+  "link.item.label.Paso a Paso": {
+    "message": "Step by Step",
+    "description": "The label of footer link with label=Paso a Paso linking to /docs/implementation-guide/setup-and-dependencies"
+  },
+  "link.item.label.YouTube (Weincode)": {
+    "message": "YouTube (Weincode)",
+    "description": "The label of footer link with label=YouTube (Weincode) linking to https://youtube.com/@weincode"
+  },
+  "link.item.label.LinkedIn (Daniel Herrera)": {
+    "message": "LinkedIn (Daniel Herrera)",
+    "description": "The label of footer link with label=LinkedIn (Daniel Herrera) linking to https://www.linkedin.com/in/daniel-herrera-sanchez-a4106a56/"
+  },
+  "link.item.label.Flutter Medellín": {
+    "message": "Flutter Medellín",
+    "description": "The label of footer link with label=Flutter Medellín linking to https://github.com/weincoder/intro_to_genui"
+  },
+  "link.item.label.Repositorio GitHub": {
+    "message": "GitHub Repository",
+    "description": "The label of footer link with label=Repositorio GitHub linking to https://github.com/weincoder/intro_to_genui"
+  },
+  "link.item.label.Package genui (pub.dev)": {
+    "message": "genui Package (pub.dev)",
+    "description": "The label of footer link with label=Package genui (pub.dev) linking to https://pub.dev/packages/genui"
+  },
+  "link.item.label.Firebase Vertex AI": {
+    "message": "Firebase Vertex AI",
+    "description": "The label of footer link with label=Firebase Vertex AI linking to https://cloud.google.com/vertex-ai"
+  }
+}

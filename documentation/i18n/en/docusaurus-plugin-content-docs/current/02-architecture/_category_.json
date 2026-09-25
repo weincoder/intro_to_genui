@@ -1,0 +1,8 @@
+{
+  "label": "2. Architecture",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Clean layered architecture and end-to-end A2UI lifecycle breakdown."
+  }
+}

@@ -25,6 +25,18 @@ Run timed word sessions, evaluate recall quality, and visualize final results wi
 
 ---
 
+## 📖 Docusaurus Documentation (English & Spanish)
+
+A comprehensive bilingual technical documentation explaining step-by-step how to implement **A2UI (Agent-to-UI)** in Flutter based on this project is available in the [`documentation/`](./documentation) directory.
+
+```bash
+cd documentation
+npm install
+npm run start
+```
+
+---
+
 ## Features
 
 | Module | Description |

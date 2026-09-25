@@ -1,1 +1,45 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"gen-ui-med-fest","appId":"1:787944082665:android:07ab08eaf1a00e7fba3478","fileOutput":"android/app/google-services.json"}},"ios":{"default":{"projectId":"gen-ui-med-fest","appId":"1:787944082665:ios:a5e35257aa998299ba3478","uploadDebugSymbols":false,"fileOutput":"ios/Runner/GoogleService-Info.plist"}},"dart":{"lib/firebase_options.dart":{"projectId":"gen-ui-med-fest","configurations":{"android":"1:787944082665:android:07ab08eaf1a00e7fba3478","ios":"1:787944082665:ios:a5e35257aa998299ba3478","web":"1:787944082665:web:8599e2b23b492494ba3478"}}}}}}
+{
+	"flutter": {
+		"platforms": {
+			"android": {
+				"default": {
+					"projectId": "gen-ui-med-fest",
+					"appId": "1:787944082665:android:07ab08eaf1a00e7fba3478",
+					"fileOutput": "android/app/google-services.json"
+				}
+			},
+			"ios": {
+				"default": {
+					"projectId": "gen-ui-med-fest",
+					"appId": "1:787944082665:ios:a5e35257aa998299ba3478",
+					"uploadDebugSymbols": false,
+					"fileOutput": "ios/Runner/GoogleService-Info.plist"
+				}
+			},
+			"dart": {
+				"lib/firebase_options.dart": {
+					"projectId": "gen-ui-med-fest",
+					"configurations": {
+						"android": "1:787944082665:android:07ab08eaf1a00e7fba3478",
+						"ios": "1:787944082665:ios:a5e35257aa998299ba3478",
+						"web": "1:787944082665:web:8599e2b23b492494ba3478"
+					}
+				}
+			}
+		}
+	},
+	"hosting": {
+		"public": "build/web",
+		"ignore": [
+			"firebase.json",
+			"**/.*",
+			"**/node_modules/**"
+		],
+		"rewrites": [
+			{
+				"source": "**",
+				"destination": "/index.html"
+			}
+		]
+	}
+}

@@ -48,4 +48,11 @@ app.*.map.json
 /android/app/google-services.json
 /ios/Runner/GoogleService-Info.plist
 /firebase_web.env.json
+/firebase_ios.env.json
+/firebase_android.env.json
 /.firebase/
+
+# Docusaurus documentation
+/documentation/node_modules/
+/documentation/build/
+/documentation/.docusaurus/

@@ -25,6 +25,18 @@ Ejecuta sesiones con temporizador, evalua el recuerdo y muestra un resultado fin
 
 ---
 
+## 📖 Documentación con Docusaurus (Español e Inglés)
+
+Una documentación técnica completa y bilingüe que explica paso a paso cómo implementar **A2UI (Agent-to-UI)** en Flutter basada en este proyecto está disponible en el directorio [`documentation/`](./documentation).
+
+```bash
+cd documentation
+npm install
+npm run start
+```
+
+---
+
 ## Funcionalidades
 
 | Modulo | Descripcion |

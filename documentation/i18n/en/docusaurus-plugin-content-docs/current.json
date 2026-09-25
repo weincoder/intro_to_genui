@@ -1,0 +1,46 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.1. Introducción": {
+    "message": "1. Introduction",
+    "description": "The label for category '1. Introducción' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.1. Introducción.link.generated-index.description": {
+    "message": "Fundamental concepts of A2UI (Agent-to-UI) and overview of the Memory Trainer project.",
+    "description": "The generated-index page description for category '1. Introducción' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.2. Arquitectura": {
+    "message": "2. Architecture",
+    "description": "The label for category '2. Arquitectura' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.2. Arquitectura.link.generated-index.description": {
+    "message": "Clean layered architecture and A2UI protocol lifecycle.",
+    "description": "The generated-index page description for category '2. Arquitectura' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.3. Guía de Implementación Paso a Paso": {
+    "message": "3. Step-by-Step Implementation Guide",
+    "description": "The label for category '3. Guía de Implementación Paso a Paso' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.3. Guía de Implementación Paso a Paso.link.generated-index.description": {
+    "message": "Hands-on guide to implement A2UI in Flutter from scratch based on this project.",
+    "description": "The generated-index page description for category '3. Guía de Implementación Paso a Paso' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.4. Análisis a Fondo de Componentes": {
+    "message": "4. Component Deep Dive",
+    "description": "The label for category '4. Análisis a Fondo de Componentes' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.4. Análisis a Fondo de Componentes.link.generated-index.description": {
+    "message": "In-depth examination of surface widgets implemented in this project: timers, animations, and emotional owl.",
+    "description": "The generated-index page description for category '4. Análisis a Fondo de Componentes' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.5. Buenas Prácticas y FAQ": {
+    "message": "5. Best Practices & FAQ",
+    "description": "The label for category '5. Buenas Prácticas y FAQ' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.5. Buenas Prácticas y FAQ.link.generated-index.description": {
+    "message": "Production tips, error resilience, automated testing, and frequently asked questions about A2UI.",
+    "description": "The generated-index page description for category '5. Buenas Prácticas y FAQ' in sidebar 'docsSidebar'"
+  }
+}

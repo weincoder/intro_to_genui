@@ -1,0 +1,8 @@
+{
+  "label": "2. Arquitectura",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Estructura en capas limpias y ciclo de vida del protocolo A2UI."
+  }
+}

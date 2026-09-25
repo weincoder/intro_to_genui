@@ -1,0 +1,8 @@
+{
+  "label": "5. Buenas Prácticas y FAQ",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Consejos de producción, resiliencia ante errores, pruebas automáticas y preguntas frecuentes sobre A2UI."
+  }
+}
