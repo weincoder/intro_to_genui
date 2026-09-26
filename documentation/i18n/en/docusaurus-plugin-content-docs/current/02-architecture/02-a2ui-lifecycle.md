@@ -19,35 +19,35 @@ sequenceDiagram
     autonumber
     actor User as User
     participant UI as MemoryTrainerPage
-    participant Conv as Conversation / SurfaceController
+    participant Conv as "Conversation / SurfaceController"
     participant Trans as A2uiTransportAdapter
-    participant Model as Gemini (Firebase Vertex AI)
-    participant Surf as Widget MemorySessionDisplay
+    participant Model as "Gemini (Firebase Vertex AI)"
+    participant Surf as "Widget MemorySessionDisplay"
 
     Note over UI,Model: Initialization Phase
     UI->>Conv: Create Controller with CatalogItem(s)
     UI->>Conv: sendRequest(SystemPrompt containing Catalog Schemas)
 
     Note over User,Model: Phase 1: Preparation
-    User->>UI: Types: "Topic animals and 5 words"
+    User->>UI: Types: 'Topic animals and 5 words'
     UI->>Conv: sendRequest(ChatMessage.user)
     Conv->>Trans: onSend(ChatMessage)
     Trans->>Model: _chatSession.sendMessage(text)
     Model-->>Trans: Surface Invocation Block (JSON MemorySessionDisplay)
     Trans-->>Conv: addChunk(JSON)
-    Conv-->>UI: Event ConversationSurfaceAdded(surfaceId: "memory_session")
+    Conv-->>UI: Event ConversationSurfaceAdded(surfaceId: 'memory_session')
     UI->>UI: Update state and append SurfaceItem
-    UI->>Surf: Builds Surface(surfaceContext: "memory_session")
+    UI->>Surf: Builds Surface(surfaceContext: 'memory_session')
 
     Note over Surf,Model: Phase 2: Interactive Memorization
     Surf->>Surf: Starts local native countdown timer (30s)
     Note over Surf: Time expires... Words are hidden
-    Surf->>Conv: itemContext.dispatchEvent(UserActionEvent "timeoutAction")
+    Surf->>Conv: itemContext.dispatchEvent(UserActionEvent 'timeoutAction')
     Conv->>Trans: onSend(ChatMessage with part.isUiInteractionPart)
     Trans->>Model: _chatSession.sendMessage(interaction text)
 
-    Note over User,Model: Phase 3 & 4: Evaluation & Final Score
-    Model-->>Trans: "What was the first animal?"
+    Note over User,Model: Phase 3 and 4: Evaluation and Final Score
+    Model-->>Trans: Question: 'What was the first animal?'
     Trans-->>Conv: Event ConversationContentReceived(text)
     Conv-->>UI: Renders MessageBubble with question
     User->>UI: Types answer...

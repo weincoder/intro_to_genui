@@ -21,36 +21,36 @@ UI  ──>  Config  ──>  Infrastructure  ──>  Domain
 ```mermaid
 graph TD
     subgraph UI ["Capa UI (Flutter Widgets)"]
-        Page[MemoryTrainerPage]
-        W1[MemorySessionDisplay]
-        W2[ScoreDisplay]
-        W3[MessageBubble]
-        Paint[OwlPainter / RetroGridPainter]
+        Page["MemoryTrainerPage"]
+        W1["MemorySessionDisplay"]
+        W2["ScoreDisplay"]
+        W3["MessageBubble"]
+        Paint["OwlPainter / RetroGridPainter"]
     end
 
-    subgraph Config ["Capa Config (Inyección y Contratos)"]
-        P1[MemorySessionProvider]
-        P2[ScoreProvider]
-        P3[ScorePayloadProvider]
-        AgentCfg[AgentConfig & System Instruction]
-        Theme[AppTheme & AppRoutes]
+    subgraph Config ["Capa Config (Inyeccion y Contratos)"]
+        P1["MemorySessionProvider"]
+        P2["ScoreProvider"]
+        P3["ScorePayloadProvider"]
+        AgentCfg["AgentConfig y System Instruction"]
+        Theme["AppTheme y AppRoutes"]
     end
 
     subgraph Infrastructure ["Capa Infrastructure (Adaptadores y Mappers)"]
-        A1[MemorySessionDefaultsAdapter]
-        A2[ScorePayloadAdapter]
-        A3[ScoreRulesAdapter]
-        M1[ScorePayloadMapper]
+        A1["MemorySessionDefaultsAdapter"]
+        A2["ScorePayloadAdapter"]
+        A3["ScoreRulesAdapter"]
+        M1["ScorePayloadMapper"]
     end
 
     subgraph Domain ["Capa Domain (Dart Puro - Reglas de Negocio)"]
-        MScore[ScoreDisplayPayloadModel]
-        GSession[MemorySessionGateway]
-        GScore[ScoreGateway]
-        UC1[MemorySessionDurationUseCase]
-        UC2[ScorePercentageUseCase]
-        UC3[ScoreMoodUseCase]
-        UC4[ParseScorePayloadUseCase]
+        MScore["ScoreDisplayPayloadModel"]
+        GSession["MemorySessionGateway"]
+        GScore["ScoreGateway"]
+        UC1["MemorySessionDurationUseCase"]
+        UC2["ScorePercentageUseCase"]
+        UC3["ScoreMoodUseCase"]
+        UC4["ParseScorePayloadUseCase"]
     end
 
     UI --> Config

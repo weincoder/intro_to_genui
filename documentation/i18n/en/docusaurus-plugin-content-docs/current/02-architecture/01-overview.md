@@ -21,36 +21,36 @@ UI  ──>  Config  ──>  Infrastructure  ──>  Domain
 ```mermaid
 graph TD
     subgraph UI ["UI Layer (Flutter Widgets)"]
-        Page[MemoryTrainerPage]
-        W1[MemorySessionDisplay]
-        W2[ScoreDisplay]
-        W3[MessageBubble]
-        Paint[OwlPainter / RetroGridPainter]
+        Page["MemoryTrainerPage"]
+        W1["MemorySessionDisplay"]
+        W2["ScoreDisplay"]
+        W3["MessageBubble"]
+        Paint["OwlPainter / RetroGridPainter"]
     end
 
-    subgraph Config ["Config Layer (DI & Contracts)"]
-        P1[MemorySessionProvider]
-        P2[ScoreProvider]
-        P3[ScorePayloadProvider]
-        AgentCfg[AgentConfig & System Instruction]
-        Theme[AppTheme & AppRoutes]
+    subgraph Config ["Config Layer (DI and Contracts)"]
+        P1["MemorySessionProvider"]
+        P2["ScoreProvider"]
+        P3["ScorePayloadProvider"]
+        AgentCfg["AgentConfig and System Instruction"]
+        Theme["AppTheme and AppRoutes"]
     end
 
-    subgraph Infrastructure ["Infrastructure Layer (Adapters & Mappers)"]
-        A1[MemorySessionDefaultsAdapter]
-        A2[ScorePayloadAdapter]
-        A3[ScoreRulesAdapter]
-        M1[ScorePayloadMapper]
+    subgraph Infrastructure ["Infrastructure Layer (Adapters and Mappers)"]
+        A1["MemorySessionDefaultsAdapter"]
+        A2["ScorePayloadAdapter"]
+        A3["ScoreRulesAdapter"]
+        M1["ScorePayloadMapper"]
     end
 
     subgraph Domain ["Domain Layer (Pure Dart - Business Rules)"]
-        MScore[ScoreDisplayPayloadModel]
-        GSession[MemorySessionGateway]
-        GScore[ScoreGateway]
-        UC1[MemorySessionDurationUseCase]
-        UC2[ScorePercentageUseCase]
-        UC3[ScoreMoodUseCase]
-        UC4[ParseScorePayloadUseCase]
+        MScore["ScoreDisplayPayloadModel"]
+        GSession["MemorySessionGateway"]
+        GScore["ScoreGateway"]
+        UC1["MemorySessionDurationUseCase"]
+        UC2["ScorePercentageUseCase"]
+        UC3["ScoreMoodUseCase"]
+        UC4["ParseScorePayloadUseCase"]
     end
 
     UI --> Config

@@ -22,9 +22,9 @@ Rather than being a plain text chatbot, the AI agent acts as a cognitive coach t
 5. **Renders an enriched final score dashboard**: Displays a second native surface (`ScoreDisplay`) featuring a progress bar, per-word feedback, and a retro Canvas-drawn owl (`OwlPainter`) whose emotional mood reflects user performance.
 
 ```mermaid
-graph LR
-    User([User]) <-->|Chat & Taps| App[Flutter App]
-    App <-->|A2UI Protocol| Agent[Gemini 2.5 Agent]
+flowchart LR
+    User(["User"]) <-->|Chat and Taps| App["Flutter App"]
+    App <-->|A2UI Protocol| Agent["Gemini 2.5 Agent"]
     Agent -->|Renders Native Surface| App
     App -->|Dispatches Action / Timeout| Agent
 ```

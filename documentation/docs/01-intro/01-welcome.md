@@ -22,9 +22,9 @@ En lugar de ser un simple chatbot de texto, el agente de IA actúa como un coach
 5. **Genera un reporte final enriquecido**: Despliega una segunda superficie nativa (`ScoreDisplay`) con barra de progreso, detalles de aciertos y un búho animado retro (`OwlPainter`) cuyo estado emocional refleja el rendimiento del usuario.
 
 ```mermaid
-graph LR
-    User([Usuario]) <-->|Chat & Toques| App[App Flutter]
-    App <-->|A2UI Protocol| Agent[Agente Gemini 2.5]
+flowchart LR
+    User(["Usuario"]) <-->|Chat y Toques| App["App Flutter"]
+    App <-->|A2UI Protocol| Agent["Agente Gemini 2.5"]
     Agent -->|Genera Superficie| App
     App -->|Dispara Accion / Timeout| Agent
 ```

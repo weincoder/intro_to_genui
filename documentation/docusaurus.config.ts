@@ -20,6 +20,11 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
 
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
+
   i18n: {
     defaultLocale: 'es',
     locales: ['es', 'en'],
@@ -58,6 +63,9 @@ const config: Config = {
     colorMode: {
       respectPrefersColorScheme: true,
       defaultMode: 'dark',
+    },
+    mermaid: {
+      theme: {light: 'neutral', dark: 'dark'},
     },
     navbar: {
       title: 'Intro to GenUI & A2UI',

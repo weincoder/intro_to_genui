@@ -19,35 +19,35 @@ sequenceDiagram
     autonumber
     actor User as Usuario
     participant UI as MemoryTrainerPage
-    participant Conv as Conversation / SurfaceController
+    participant Conv as "Conversation / SurfaceController"
     participant Trans as A2uiTransportAdapter
-    participant Model as Gemini (Firebase Vertex AI)
-    participant Surf as Widget MemorySessionDisplay
+    participant Model as "Gemini (Firebase Vertex AI)"
+    participant Surf as "Widget MemorySessionDisplay"
 
-    Note over UI,Model: Fase de Inicialización
+    Note over UI,Model: Fase de Inicializacion
     UI->>Conv: Crear Controller con CatalogItem(s)
-    UI->>Conv: sendRequest(SystemPrompt con schemas del Catálogo)
+    UI->>Conv: sendRequest(SystemPrompt con schemas del Catalogo)
 
-    Note over User,Model: Fase 1: Preparación
-    User->>UI: Escribe: "Tema frutas y 5 palabras"
+    Note over User,Model: Fase 1: Preparacion
+    User->>UI: Escribe: 'Tema frutas y 5 palabras'
     UI->>Conv: sendRequest(ChatMessage.user)
     Conv->>Trans: onSend(ChatMessage)
     Trans->>Model: _chatSession.sendMessage(texto)
     Model-->>Trans: Respuesta con Bloque de Superficie (JSON MemorySessionDisplay)
     Trans-->>Conv: addChunk(JSON)
-    Conv-->>UI: Evento ConversationSurfaceAdded(surfaceId: "memory_session")
+    Conv-->>UI: Evento ConversationSurfaceAdded(surfaceId: 'memory_session')
     UI->>UI: Actualiza estado e inserta SurfaceItem
-    UI->>Surf: Construye Surface(surfaceContext: "memory_session")
+    UI->>Surf: Construye Surface(surfaceContext: 'memory_session')
 
-    Note over Surf,Model: Fase 2: Memorización Interactiva
+    Note over Surf,Model: Fase 2: Memorizacion Interactiva
     Surf->>Surf: Inicia Timer regresivo nativo (30s)
     Note over Surf: Transcurre el tiempo... Las palabras se ocultan
-    Surf->>Conv: itemContext.dispatchEvent(UserActionEvent "timeoutAction")
+    Surf->>Conv: itemContext.dispatchEvent(UserActionEvent 'timeoutAction')
     Conv->>Trans: onSend(ChatMessage con part.isUiInteractionPart)
     Trans->>Model: _chatSession.sendMessage(interaction text)
 
-    Note over User,Model: Fase 3 & 4: Evaluación y Resultado
-    Model-->>Trans: "¿Cuál fue la primera fruta?"
+    Note over User,Model: Fase 3 y 4: Evaluacion y Resultado
+    Model-->>Trans: Mensaje: 'Cual fue la primera fruta?'
     Trans-->>Conv: Evento ConversationContentReceived(text)
     Conv-->>UI: Renderiza MessageBubble con la pregunta
     User->>UI: Escribe respuesta...
